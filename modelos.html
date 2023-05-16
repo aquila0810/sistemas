@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+<style>
+    body{
+        background-color: bisque;
+    }
+</style>
+</head>
+<body>
+<div class="container bs-success">
+                     
+<!-- Modal / Ventana / Overlay en HTML -->
+<div id="modalAplicacionOSI" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Aplicacion(Modelo OSI)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Está directamente relacionada con el usuario. Incluye protocolos que utilizan las
+                    aplicaciones para el intercambio de datos. Hay que tener en cuenta que el usuario interactúa con el programa
+                    o aplicación, no con la capa de aplicación.</p>
+                <p class="text-warning"><small>Algunos de los protocolos son HTTP, IMAP, SMTP, Telnet o FTP.</small></p>           <!-- pon una observacion de color amarillo-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalPresentacionOSI" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Presentacion</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Su objetivo principal es realizar funciones de conversión y codificación de los datos
+                    para asegurar que los datos transferidos desde la capa sesión puedan ser leídos y entendidos por el sistema
+                    de la capa de aplicación.</p>
+                    <p class="text-warning"><small>Algunos protocolos relacionados son jpeg, xls, gif, mov, etc.</small></p>           <!-- pon una observacion de color amarillo-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalSesionOSI" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Sesion</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Facilita acceso a servicios y conexiones. Un ejemplo de esta capa es la conexión entre un
+                    servidor y un cliente</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalTransporteOSI" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Transporte(Modelo OSI)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Se encarga de realizar una comunicación segura y confiable desde el origen hasta el
+                    destino. Para ello, utiliza controles de flujo y errores que eviten pérdidas de datos y garanticen la velocidad</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalRedOSI" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Red</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Determina la mejor ruta de destino a través del uso de tablas de enrutamiento.</p>
+                    <p class="text-warning"><small>Algunos protocolos usados son IP, IGRP o RIP</small></p>           <!-- pon una observacion de color amarillo-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalEnlaceOSI" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Enlace de Datos</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Su función principal es garantizar la transmisión entre dos dispositivos a través de
+                    un enlace. También detecta y soluciona errores que puedan surgir en una comunicación</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalFisicaOSI" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Fisica</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Se trata de los medios físicos que realizan las transmisiones de datos (bits) en las comunicaciones
+                    de una red.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalAplicacionTCP" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Aplicacion(Modelo TCP/IP)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p> Implementa funcionalidades que permiten la representación de datos para el usuario a
+                    través de sistemas de codificación y control del diálogo.</p>
+                <p class="text-warning"><small>Algunos protocolos son Telnet, DNS, SMTP o FTP.</small></p>           <!-- pon una observacion de color amarillo-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalTransporteTCP" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Transporte(Modelo TCP/IP)</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Establece una conversación entre el origen y el destino. Para ello, utiliza técnicas de
+                    corrección de errores, control de flujo y confiabilidad.
+                    Los principales protocolos de la capa de transporte son TCP y UDP. TCP confirma y garantiza la entrega de
+                    paquetes a través del envío de acuses de recibo por parte del host receptor. Mientras UDP se utiliza cuando
+                    no es necesario acuses de recibo. Con UDP se aumenta la velocidad de transmisión, pero no se garantiza que
+                    la información llegue al receptor, aunque sí hay una probabilidad muy alta de producirse.
+                    </p>
+                <p class="text-warning"><small>Un ejemplo de conexión UDP es la radio por internet. Si alguno de los paquetes se pierde, no se vuelve a
+                    enviar, sino que continúa enviando los siguientes paquetes para continuar con la retransmisión.</small></p>           <!-- pon una observacion de color amarillo-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalInternetTCP" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Internet</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Puede considerarse la capa más importante de la arquitectura TCP/IP. Permite que
+                    los dispositivos de la red puedan enviar paquetes y estos sean transmitidos a través de la red de
+                    forma independiente.
+                    El funcionamiento de la capa de internet es principalmente enumerar cada paquete con la dirección del host
+                    de destino y origen, y, a continuación, asegurar la integridad del paquete.
+                    </p>
+                <p class="text-warning"><small>El protocolo más importante de la capa de internet es IP, encargado de buscar una ruta hacia el destino de
+                    cada paquete</small></p>           <!-- pon una observacion de color amarillo-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalAccesoTCP" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Acceso a Red</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p> Administra los dispositivos de hardware y medios que forman parte de la red a través
+                    de una tecnología. La tecnología más utilizada es Ethernet, la cual emplea redes de área local (LAN) y redes
+                    de área local inalámbricas (WLAN).
+                    </p>
+                <p class="text-warning"><small>También, realiza tareas de configuración de direcciones IP. Asigna direcciones a los diferentes dispositivos de
+                    la red y encapsula los paquetes IP en tramas</small></p>           <!-- pon una observacion de color amarillo-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="Close">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container2" justify>
+    <h1 class="text-center mt-4">MEDAC</h1>
+        <div class="row mt-5" style="margin-left: 450px;">
+            <h6 class="text-right">Modelo OSI &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                Modelo TCP/IP
+            </h6>
+                <div class="text-center col-3 bg-info">
+                    <a data-bs-toggle="modal" data-bs-target="#modalAplicacionOSI" role="button" class="btn btn-large btn-primary" data-toggle="modal">Aplicacion</a>
+                    <a data-bs-toggle="modal" data-bs-target="#modalPresentacionOSI" role="button" class="btn btn-large btn-primary" data-toggle="modal">Presentacion</a>
+                    <a data-bs-toggle="modal" data-bs-target="#modalSesionOSI" role="button" class="btn btn-large btn-primary" data-toggle="modal">Sesion</a>
+                </div>
+            <div class="text-center col-3 bg-danger">
+                <a data-bs-toggle="modal" data-bs-target="#modalAplicacionTCP" role="button" class="btn btn-large btn-primary" data-toggle="modal">Aplicacion</a>
+             </div>  
+            </div>
+             <div class="row mt-1" style="margin-left: 450px;">
+                <div class="text-center col-3 bg-info">
+                    
+                    <a data-bs-toggle="modal" data-bs-target="#modalTransporteOSI" role="button" class="btn btn-large btn-primary" data-toggle="modal">Transporte</a>
+                </div>
+            <div class="text-center col-3 bg-danger">
+                <a data-bs-toggle="modal" data-bs-target="#modalAplicacionTCP" role="button" class="btn btn-large btn-primary" data-toggle="modal">Transporte</a>
+             </div> 
+            </div>
+             <div class="row mt-1" style="margin-left: 450px;">
+                <div class="text-center col-3 bg-info">
+                    <a data-bs-toggle="modal" data-bs-target="#modalRedOSI" role="button" class="btn btn-large btn-primary" data-toggle="modal">Red</a>
+                </div>
+            <div class="text-center col-3 bg-danger">
+                <a data-bs-toggle="modal" data-bs-target="#modalInternetTCP" role="button" class="btn btn-large btn-primary" data-toggle="modal">Internet</a>
+             </div>  
+            </div>
+        </div>
+            <div class="text-center row mt-1" style="margin-left: 450px;">
+                <div class="col-3 bg-info">
+                    <a data-bs-toggle="modal" data-bs-target="#modalEnlaceOSI" role="button" class="btn btn-large btn-primary" data-toggle="modal">Enlace de Datos</a>
+                    <a data-bs-toggle="modal" data-bs-target="#modalFisicaOSI" role="button" class="btn btn-large btn-primary" data-toggle="modal">Fisica</a>
+                </div>
+            <div class="text-center col-3 bg-danger">
+                    <a data-bs-toggle="modal" data-bs-target="#modalAccesoTCP" role="button" class="btn btn-large btn-primary" data-toggle="modal">Acceso a red</a>
+             </div>  
+            </div>
+        </div>
+        </div>
+ </body>
+</html>
